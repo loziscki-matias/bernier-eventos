@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
+
+/* font-family: 'Comme', sans-serif; */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*comienzo header*/
+
+.fondo-inicio{
+    width: 100%;
+}
+h1{
+    font-size: 35px;
+    position: relative;
+    top: 8px;
+    left: 100px;
+}
+
+.letra-1{
+font-family: 'Comme', sans-serif;
+position:relative ;
+top: 8px;
+left: 158px;
+}
+
+.nav li{
+    padding: 35px;
+    display: inline;
+    position: relative;
+    bottom: 27px; ;
+    left: 800px; ;
+}
+
+header{
+    background-color: #292525;
+}
+
+/*fin header y comienzo sections */
+
+main{
+    background-color: D9D9D9;
+}
+
+
+
+.galeria1 img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 50px 5px 5px 18px;
+}
+
+
+
+.galeria2 img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px 5px 18px;
+}
+
+
+
+.galeria3 img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px 5px 18px;
+}
+
+
+
+.galeria4 img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px 5px 18px;
+}
+
+
+.galeria5 img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 5px 5px 5px 18px;
+}
+
+/* informacion de contacto */
+
+.datoContacto1{
+    position: relative;
+    top: 60px;
+    left: 400px;
+}
+
+.datoContacto2{
+    position: relative;
+    left: 600px;
+}
+
+.datoContacto3{
+    position: relative;
+    left: 800px;
+    bottom: 40px;
+}
+
+.datoContacto1 p{
+    position: relative;
+    right: 30px;
+    color: gray;
+}
+
+.datoContacto2 p{
+    position: relative;
+    top: 10px;
+    right: 45px;
+    color: gray;
+}
+
+.datoContacto3 p{
+    position: relative;
+    right: 70px;
+    color: gray;
+}
+
+.mapa{
+    position: relative;
+    top: 200px;
+    margin-left: 30px;
+}
+
+/* seccion de opiniones */
+
+.opinion{
+    color: #292525;
+}
+
+/* seccion contacto-formulario */
+
+.seccionFormulario{
+    position: relative;
+    bottom: 200px;
+    left: 500px;
+    color: #292525;
+    width: 55%;
+}
+.seccionFormulario h4{
+    color: #292525;
+}
+
+.seccionFormulario h3{
+    color: #292525;
+}
+
+.formulario{
+    color: black;
+}
+
+.boton{
+    padding: 0px 30px 0px ;
+    margin: 15px;
+    color: #292525;
+    border: #292525 solid;
+    font-weight: bolder;
+}
+.labelRegistro{
+    color: black;
+    display: block;
+    margin-top: 10px;
+}
+
+.imputRegistro{
+    display: block;
+}
+
+.inputMensaje{
+    display: block;
+    width: 500px;
+    height: 150px;
+    margin-top: 15px;
+}
+
+/* Seccion Quienes somos */
+
+h2{
+    padding-top: 50px;
+    color: #292525;
+    text-align: center;
+}
+
+.el-trabajo{
+    padding: 30px 300px;
+    color: #292525;
+}
+
+.pepito{
+    display: inline;
+}
+dd{
+    color: black;
+}
+
+dt{
+    color: #292525;
+}
+
+/* fin de sections y comienzo footer */
+
+
+footer{
+    background-color: #292525;
+}
+
+.div1{
+    position: relative;
+    left: 75px;
+    top: 30px;
+}
+
+.div1 p{
+    padding-top: 15px;
+}
+
+
+
+.div2{
+    position: relative;
+    left: 800px;
+    bottom: 50px;
+}
+
+.div3{
+    position: relative;
+    left: 1300px;
+    bottom: 135px;}
+
+/*fin footer*/
