@@ -215,29 +215,34 @@ dt{
 
 footer{
     background-color: #292525;
+    height: 150px;
+}
+
+.elementosFoot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.elemento{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    top: 30px;
 }
 
 .div1{
     position: relative;
-    left: 75px;
-    top: 30px;
+    right: 35px;
 }
-
-.div1 p{
-    padding-top: 15px;
-}
-
-
-
 .div2{
     position: relative;
-    left: 800px;
-    bottom: 50px;
-}
 
+}
 .div3{
     position: relative;
-    left: 1300px;
-    bottom: 135px;}
+    }
 
 /*fin footer*/
