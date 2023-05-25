@@ -15,28 +15,30 @@
 .logo{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 100px;
 }
 
 .letra-1{
     font-family: 'Comme', sans-serif;
     position:relative ;
     top: 8px;
-    left: 158px;
+    left: 100px;
 }
 
 .navbar{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 list-style: none;
-justify-content: flex-end;
-gap: 70px;
-position: relative;
-bottom: 30px;
-right: 80px;
+align-items: center;
+gap: 15px;
+padding-top: 30px;
 }
 
 header{
     background-color: #292525;
+    height: 275px;
 }
 
 /*fin header y comienzo sections */
@@ -57,47 +59,19 @@ main{
 
 
 
-.galeria1 img{
+.galeria{
+display: grid;
+grid-template-columns: 100%;
+}
+
+.img{
     object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 50px 5px 5px 18px;
+    
+    max-width: 100%;
+    margin: 2px;
 }
 
 
-
-.galeria2 img{
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 5px 5px 5px 18px;
-}
-
-
-
-.galeria3 img{
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 5px 5px 5px 18px;
-}
-
-
-
-.galeria4 img{
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 5px 5px 5px 18px;
-}
-
-
-.galeria5 img{
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
-    margin: 5px 5px 5px 18px;
-}
 
 /* informacion de contacto */
 
@@ -223,14 +197,16 @@ dt{
 
 footer{
     background-color: #292525;
-    height: 150px;
+    height: 400px;
 }
 
 .elementosFoot{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .elemento{
@@ -238,19 +214,15 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    top: 30px;
 }
 
-.div1{
-    position: relative;
-    right: 35px;
+.elementoDeFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
-.div2{
-    position: relative;
 
-}
-.div3{
-    position: relative;
-    }
 
 /*fin footer*/
