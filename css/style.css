@@ -226,3 +226,41 @@ footer{
 
 
 /*fin footer*/
+
+/*media queries*/
+
+@media (min-width: 768px) {
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cambioImagen {
+        width: 380px;
+        height: 287px;
+    }
+
+}
+
+@media  (min-width: 1024px){
+    
+    .cambioImagen1 {
+        width: 512px;
+        height: 288px;
+    }
+}
+
+@media (min-width: 1440px){
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cambioImagen2{
+        width: 360px;
+        height: 288px;
+    }
+
+}
