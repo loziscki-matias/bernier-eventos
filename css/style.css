@@ -209,12 +209,6 @@ footer{
     padding-top: 50px;
 }
 
-.elemento{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-}
 
 .elementoDeFooter{
     display: flex;
@@ -245,10 +239,54 @@ footer{
 
 @media  (min-width: 1024px){
     
+    header{
+        height: 100px;
+    }
     .cambioImagen1 {
         width: 512px;
         height: 288px;
     }
+    .logo{
+        display: flex;
+        align-items: start;
+        position: relative;
+        right: 55px;
+
+    }
+    .letra-1{
+        position: relative;
+        top: 8px;
+        left: 155px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: end;
+        gap: 15px;
+        position: relative;
+        bottom: 60px;
+        right: 50px;
+        }
+
+        footer{
+            background-color: #292525;
+            height: 200px;
+        }
+        .elementosFoot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 10px;
+            padding-top: 50px;
+        }
+        .elementoDeFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            gap: 10px;
+        }
 }
 
 @media (min-width: 1440px){
@@ -262,5 +300,14 @@ footer{
         width: 360px;
         height: 288px;
     }
-
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: end;
+        gap: 15px;
+        position: relative;
+        bottom: 60px;
+        right: 100px;
+        }
 }
