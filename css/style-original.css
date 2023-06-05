@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
+
+/* font-family: 'Comme', sans-serif; */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*comienzo header*/
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 100px;
+}
+
+.letra-1{
+    font-family: 'Comme', sans-serif;
+    position:relative ;
+    top: 8px;
+    left: 100px;
+}
+
+.navbar{
+display: flex;
+flex-direction: column;
+list-style: none;
+align-items: center;
+gap: 15px;
+padding-top: 30px;
+}
+
+header{
+    background-color: #292525;
+    height: 275px;
+}
+
+/*fin header y comienzo sections */
+
+.fondo-inicio{
+    width: 100%;
+}
+h1{
+    font-size: 35px;
+    position: relative;
+    top: 8px;
+    left: 100px;
+}
+
+main{
+    background-color: D9D9D9;
+}
+
+
+
+.galeria{
+display: grid;
+grid-template-columns: 100%;
+}
+
+.img{
+    object-fit: cover;
+    
+    max-width: 100%;
+    margin: 2px;
+}
+
+
+
+/* informacion de contacto */
+
+.datoContacto1{
+    position: relative;
+    top: 60px;
+    left: 400px;
+}
+
+.datoContacto2{
+    position: relative;
+    left: 600px;
+}
+
+.datoContacto3{
+    position: relative;
+    left: 800px;
+    bottom: 40px;
+}
+
+.datoContacto1 p{
+    position: relative;
+    right: 30px;
+    color: gray;
+}
+
+.datoContacto2 p{
+    position: relative;
+    top: 10px;
+    right: 45px;
+    color: gray;
+}
+
+.datoContacto3 p{
+    position: relative;
+    right: 70px;
+    color: gray;
+}
+
+.mapa{
+    position: relative;
+    top: 200px;
+    margin-left: 30px;
+}
+
+/* seccion de opiniones */
+
+.opinion{
+    color: #292525;
+}
+
+/* seccion contacto-formulario */
+
+.seccionFormulario{
+    position: relative;
+    bottom: 200px;
+    left: 500px;
+    color: #292525;
+    width: 55%;
+}
+.seccionFormulario h4{
+    color: #292525;
+}
+
+.seccionFormulario h3{
+    color: #292525;
+}
+
+.formulario{
+    color: black;
+}
+
+.boton{
+    padding: 0px 30px 0px ;
+    margin: 15px;
+    color: #292525;
+    border: #292525 solid;
+    font-weight: bolder;
+}
+.labelRegistro{
+    color: black;
+    display: block;
+    margin-top: 10px;
+}
+
+.imputRegistro{
+    display: block;
+}
+
+.inputMensaje{
+    display: block;
+    width: 500px;
+    height: 150px;
+    margin-top: 15px;
+}
+
+/* Seccion Quienes somos */
+
+h2{
+    padding-top: 50px;
+    color: #292525;
+    text-align: center;
+}
+
+.el-trabajo{
+    padding: 30px 300px;
+    color: #292525;
+}
+
+.pepito{
+    display: inline;
+}
+dd{
+    color: black;
+}
+
+dt{
+    color: #292525;
+}
+
+/* fin de sections y comienzo footer */
+
+
+footer{
+    background-color: #292525;
+    height: 400px;
+}
+
+.elementosFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.elementoDeFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+
+/*fin footer*/
+
+/*media queries*/
+
+@media (min-width: 768px) {
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cambioImagen {
+        width: 380px;
+        height: 287px;
+    }
+
+}
+
+@media  (min-width: 1024px){
+    
+    header{
+        height: 100px;
+    }
+    .cambioImagen1 {
+        width: 512px;
+        height: 288px;
+    }
+    .logo{
+        display: flex;
+        align-items: start;
+        position: relative;
+        right: 55px;
+
+    }
+    .letra-1{
+        position: relative;
+        top: 8px;
+        left: 155px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: end;
+        gap: 15px;
+        position: relative;
+        bottom: 60px;
+        right: 50px;
+        }
+
+        footer{
+            background-color: #292525;
+            height: 200px;
+        }
+        .elementosFoot{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 10px;
+            padding-top: 50px;
+        }
+        .elementoDeFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            gap: 10px;
+        }
+}
+
+@media (min-width: 1440px){
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cambioImagen2{
+        width: 360px;
+        height: 288px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: end;
+        gap: 15px;
+        position: relative;
+        bottom: 60px;
+        right: 100px;
+        }
+}

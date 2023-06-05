@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "<p align=\"left\">\r El mismo consta de una empresa de de Ambientación de eventos (ficticia), con breves descripciones de los fundadores, opiniones de clientes, forma de solicitar el servicio y visualización tanto en imágenes como videos de el desarrollo de la actividad mencionada.\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
