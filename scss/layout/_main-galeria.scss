@@ -1,0 +1,14 @@
+main{
+    background-color: $color-secundario;
+    .galeria{
+        display: grid;
+        grid-template-columns: 100%;
+        .img{
+            object-fit: cover;
+            
+            max-width: 100%;
+            margin: 2px;
+        }
+        }
+    
+}

@@ -1,0 +1,14 @@
+@media (min-width: 1440px){
+    .navbar{
+        position: relative;
+        right: 0px;
+        }
+        .galeria{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .cambioImagen2{
+            width: 360px;
+            height: 288px;
+        }
+}

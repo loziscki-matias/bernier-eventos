@@ -1,0 +1,88 @@
+.mainFormulario{
+    background-color: $color-secundario;
+    @include grid(repeat(1,1fr),3,"contacto""mapa""formulario",center,center,0px);
+    width: 100%;
+    .informacion{
+        grid-area: contacto;
+        @include flex(row,wrap,center,none,30px);
+        padding-top: 15px;
+        padding-bottom: 25px;
+        .datoContacto1{
+            @include flex(column,wrap,center,center,5px);
+        }
+        .datoContacto2{
+            @extend .datoContacto1;
+        }
+        .datoContacto3{
+            @extend .datoContacto1;
+        }
+    }
+        .contenedorMapa{
+            margin: auto;
+            width: 90%;
+            .mapa{
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            width: 100%;
+            height: 320px;
+        }
+    }
+    .seccionFormulario{
+        width: 100%;
+        grid-area: formulario;
+        @include grid(repeat(1,1fr),3,"h3""h4""formulario",center,center,30px);
+        h3{
+            grid-area: h3;
+            text-align: center;
+            padding-top: 25px;
+        }
+        h4{
+            grid-area: h4;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        .formulario{
+            padding-bottom: 30px;
+            grid-area: formulario;
+            @include grid(repeat(1,1fr),8,"fecha""lugar""cantidad""tipo""numero""email""mensaje""boton",center,center,10px);
+            .formFecha{
+                grid-area: fecha;
+                @include flex(column,wrap,center,center,3px);
+            }
+            .formLugar{
+                grid-area: lugar;
+                @extend .formFecha;
+            }
+            .formPersonas{
+                grid-area: cantidad;
+                @extend .formFecha;
+            }
+            .formTipoEvento{
+                grid-area: tipo;
+                @extend .formFecha;
+            }
+            .formContacto{
+                grid-area: numero;
+                @extend .formFecha;
+            }
+            .formMail{
+                grid-area: email;
+                @extend .formFecha;
+            padding-bottom: 10px;
+            }
+            .formMensaje{
+                grid-area: mensaje;
+                @extend .formFecha;
+                .inputMensaje{
+                    width: 173px;
+                    height: 70px;
+                }
+            }
+            .boton{
+                grid-area: boton;
+                color: rgb(62, 57, 57);
+            }
+        }
+    }
+}

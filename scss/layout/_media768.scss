@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cambioImagen {
+        width: 380px;
+        height: 287px;
+    }
+    .contenedorMapa{
+        max-width: 75%;
+    }
+    .mapa {
+        align-self: center;        
+    }
+    .mainFormulario .seccionFormulario .formulario{
+        padding-bottom: 30px;
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "fecha lugar"
+        "cantidad tipo"
+        "numero email"
+        "mensaje boton";
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+        }
+}
+.mainFormulario .seccionFormulario .formulario .formFecha{
+    grid-area: fecha;
+}
+.mainFormulario .seccionFormulario .formulario .formLugar{
+    grid-area: lugar;
+}
+.mainFormulario .seccionFormulario .formulario .formPersonas{
+    grid-area: cantidad;
+}
+.mainFormulario .seccionFormulario .formulario .formTipoEvento{
+    grid-area: tipo;
+}
+.mainFormulario .seccionFormulario .formulario .formContacto{
+    grid-area: numero;
+}
+.mainFormulario .seccionFormulario .formulario .formMail{
+    grid-area: email;
+}
+.mainFormulario .seccionFormulario .formulario .formMensaje{
+    grid-area: mensaje;
+}
+.mainFormulario .seccionFormulario .formulario .boton{
+    grid-area: boton;
+}
+.videos{
+    @include flex(row,wrap,space-evenly,center,10px);
+    position: relative;
+    right: 20px;
+}

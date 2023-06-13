@@ -1,8 +1,450 @@
 @import url("https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap");
+/* font-family: 'Comme', sans-serif; */
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: aliceblue;
+  text-decoration: none;
+  list-style-type: none; }
 
 html {
   font-size: 62.5%; }
+
+header {
+  background-color: #292525;
+  height: 80px; }
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative; }
+    header .logo .letra-1 {
+      font-family: sans-serif;
+      position: relative; }
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 20px; }
+
+footer {
+  background-color: #292525;
+  height: 220px; }
+  footer .elementosFoot {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 15px; }
+    footer .elementosFoot .elementoDeFooter {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      text-align: center; }
+
+.fondo-inicio {
+  width: 100%; }
+
+main {
+  background-color: rgba(108, 105, 109, 0.47); }
+  main .galeria {
+    display: grid;
+    grid-template-columns: 100%; }
+    main .galeria .img {
+      object-fit: cover;
+      max-width: 100%;
+      margin: 2px; }
+
+.mainFormulario {
+  background-color: rgba(108, 105, 109, 0.47);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 3;
+  grid-template-areas: "contacto" "mapa" "formulario";
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  width: 100%; }
+  .mainFormulario .informacion {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: none;
+    gap: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px; }
+    .mainFormulario .informacion .datoContacto1, .mainFormulario .informacion .datoContacto2, .mainFormulario .informacion .datoContacto3 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px; }
+  .mainFormulario .contenedorMapa {
+    margin: auto;
+    width: 90%; }
+    .mainFormulario .contenedorMapa .mapa {
+      justify-content: center;
+      align-self: center;
+      align-items: center;
+      width: 100%;
+      height: 320px; }
+  .mainFormulario .seccionFormulario {
+    width: 100%;
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 3;
+    grid-template-areas: "h3" "h4" "formulario";
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+    .mainFormulario .seccionFormulario h3 {
+      grid-area: h3;
+      text-align: center;
+      padding-top: 25px; }
+    .mainFormulario .seccionFormulario h4 {
+      grid-area: h4;
+      text-align: center;
+      padding-bottom: 5px; }
+    .mainFormulario .seccionFormulario .formulario {
+      padding-bottom: 30px;
+      grid-area: formulario;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 8;
+      grid-template-areas: "fecha" "lugar" "cantidad" "tipo" "numero" "email" "mensaje" "boton";
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .mainFormulario .seccionFormulario .formulario .formFecha, .mainFormulario .seccionFormulario .formulario .formLugar, .mainFormulario .seccionFormulario .formulario .formPersonas, .mainFormulario .seccionFormulario .formulario .formTipoEvento, .mainFormulario .seccionFormulario .formulario .formContacto, .mainFormulario .seccionFormulario .formulario .formMail, .mainFormulario .seccionFormulario .formulario .formMensaje {
+        grid-area: fecha;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3px; }
+      .mainFormulario .seccionFormulario .formulario .formLugar {
+        grid-area: lugar; }
+      .mainFormulario .seccionFormulario .formulario .formPersonas {
+        grid-area: cantidad; }
+      .mainFormulario .seccionFormulario .formulario .formTipoEvento {
+        grid-area: tipo; }
+      .mainFormulario .seccionFormulario .formulario .formContacto {
+        grid-area: numero; }
+      .mainFormulario .seccionFormulario .formulario .formMail {
+        grid-area: email;
+        padding-bottom: 10px; }
+      .mainFormulario .seccionFormulario .formulario .formMensaje {
+        grid-area: mensaje; }
+        .mainFormulario .seccionFormulario .formulario .formMensaje .inputMensaje {
+          width: 173px;
+          height: 70px; }
+      .mainFormulario .seccionFormulario .formulario .boton {
+        grid-area: boton;
+        color: #3e3939; }
+
+main {
+  background-color: rgba(108, 105, 109, 0.47); }
+  main .agustina {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .agustina .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+  main .carla {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .carla .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+  main .luciano {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .luciano .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+  main .elizabeth {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .elizabeth .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+  main .ximena {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .ximena .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+  main .gabriel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    padding-top: 30px; }
+    main .gabriel .opinion {
+      text-align: center;
+      color: #766773;
+      width: 400px; }
+
+h2 {
+  color: #766773;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.el-trabajo {
+  text-align: center;
+  padding-bottom: 40px; }
+
+.alan {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .alan .alanImg {
+    justify-content: center;
+    width: 330px; }
+  .alan dt {
+    text-align: center;
+    color: #151315; }
+  .alan dd {
+    text-align: center;
+    color: #766773; }
+
+.juana {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .juana .juanaImg {
+    width: 330px; }
+  .juana dt {
+    text-align: center;
+    color: #171517; }
+  .juana dd {
+    text-align: center;
+    color: #766773; }
+
+.franco {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .franco .francoImg {
+    width: 330px; }
+  .franco dt {
+    text-align: center;
+    color: #171517; }
+  .franco dd {
+    text-align: center;
+    color: #766773; }
+
+.eliana {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .eliana .elianaImg {
+    width: 330px; }
+  .eliana dt {
+    text-align: center;
+    color: #171517; }
+  .eliana dd {
+    text-align: center;
+    color: #766773; }
+
+.video1 {
+  width: 330px;
+  position: relative;
+  left: 20px;
+  padding-bottom: 20px; }
+
+.video2 {
+  width: 330px;
+  position: relative;
+  left: 20px;
+  padding-bottom: 20px; }
+
+@media (min-width: 768px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .cambioImagen {
+    width: 380px;
+    height: 287px; }
+  .contenedorMapa {
+    max-width: 75%; }
+  .mapa {
+    align-self: center; }
+  .mainFormulario .seccionFormulario .formulario {
+    padding-bottom: 30px;
+    grid-area: formulario;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "fecha lugar" "cantidad tipo" "numero email" "mensaje boton";
+    justify-content: center;
+    align-items: center;
+    gap: 10px; } }
+
+.mainFormulario .seccionFormulario .formulario .formFecha, .mainFormulario .seccionFormulario .formulario .formLugar, .mainFormulario .seccionFormulario .formulario .formPersonas, .mainFormulario .seccionFormulario .formulario .formTipoEvento, .mainFormulario .seccionFormulario .formulario .formContacto, .mainFormulario .seccionFormulario .formulario .formMail, .mainFormulario .seccionFormulario .formulario .formMensaje {
+  grid-area: fecha; }
+
+.mainFormulario .seccionFormulario .formulario .formLugar {
+  grid-area: lugar; }
+
+.mainFormulario .seccionFormulario .formulario .formPersonas {
+  grid-area: cantidad; }
+
+.mainFormulario .seccionFormulario .formulario .formTipoEvento {
+  grid-area: tipo; }
+
+.mainFormulario .seccionFormulario .formulario .formContacto {
+  grid-area: numero; }
+
+.mainFormulario .seccionFormulario .formulario .formMail {
+  grid-area: email; }
+
+.mainFormulario .seccionFormulario .formulario .formMensaje {
+  grid-area: mensaje; }
+
+.mainFormulario .seccionFormulario .formulario .boton {
+  grid-area: boton; }
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  right: 20px; }
+
+@media (min-width: 1024px) {
+  header {
+    height: 100px; }
+    header .logo {
+      display: flex;
+      align-items: start;
+      position: relative;
+      top: 25px;
+      left: 50px; }
+    header .letra-1 {
+      position: relative;
+      top: 3px;
+      left: 40px; }
+    header .navbar {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: end;
+      gap: 15px;
+      position: relative;
+      bottom: 15px;
+      right: 110px; }
+  footer {
+    background-color: #292525;
+    height: 115px; }
+    footer .elementosFoot {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 25px; }
+    footer .elementoDeFooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+      gap: 10px; }
+  .cambioImagen1 {
+    width: 512px;
+    height: 288px; }
+  .agusYcarla, .luYeli, .ximeYgaby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; } }
+
+@media (min-width: 1440px) {
+  .navbar {
+    position: relative;
+    right: 0px; }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+  .cambioImagen2 {
+    width: 360px;
+    height: 288px; } }

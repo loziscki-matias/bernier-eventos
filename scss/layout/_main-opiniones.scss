@@ -1,0 +1,69 @@
+main {
+    background-color: $color-secundario;
+
+    .agustina {
+        @include flex(column, wrap, center, center, 10px);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        .opinion {
+            text-align: center;
+            color: rgb(118, 103, 115);
+            width: 400px;
+        }
+    }
+
+    .carla {
+        @include flex(column, wrap, center, center, 10px);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        .opinion {
+            text-align: center;
+            color: rgb(118, 103, 115);
+            width: 400px;
+        }
+    }
+
+        .luciano {
+            @include flex(column, wrap, center, center, 10px);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        .opinion {
+            text-align: center;
+            color: rgb(118, 103, 115);
+            width: 400px;
+            }
+        }
+
+        .elizabeth {
+            @include flex(column, wrap, center, center, 10px);
+            padding-bottom: 35px;
+            padding-top: 30px;
+            .opinion {
+                text-align: center;
+                color: rgb(118, 103, 115);
+                width: 400px;
+                }
+        }
+
+        .ximena {
+            @include flex(column, wrap, center, center, 10px);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        .opinion {
+            text-align: center;
+            color: rgb(118, 103, 115);
+            width: 400px;
+            }
+        }
+
+        .gabriel {
+            @include flex(column, wrap, center, center, 10px);
+        padding-bottom: 35px;
+        padding-top: 30px;
+        .opinion {
+            text-align: center;
+            color: rgb(118, 103, 115);
+            width: 400px;
+            }
+        }
+    }

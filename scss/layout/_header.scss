@@ -1,0 +1,22 @@
+header {
+    background-color: $color-principal;
+    height: 80px;
+    .logo {
+        @include flex(column,wrap,center,center,0); 
+        position: relative;
+        .letra-1 {
+            font-family: sans-serif;
+            position: relative
+        }
+    }.navbar {
+        @include flex(row,wrap,center,center,15px);
+        position: relative;
+        padding-top: 17px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+

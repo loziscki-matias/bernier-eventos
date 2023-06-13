@@ -1,0 +1,87 @@
+h2{
+    color: rgb(118, 103, 115);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.el-trabajo{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.alan{
+    @include flex(column,wrap,center,center,20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .alanImg{
+        justify-content: center;
+        width: 330px;
+    }
+    dt{
+        text-align: center;
+        color:rgb(21, 19, 21) ;
+    }
+    dd{
+        text-align: center;
+        color:rgb(118, 103, 115) ;
+    }
+}
+.juana {
+    @include flex(column,wrap,center,center,20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .juanaImg{
+        width: 330px;;
+    }
+    dt {
+        text-align: center;
+        color: rgb(23, 21, 23);
+    }
+    dd {
+        text-align: center;
+        color: rgb(118, 103, 115);
+    }
+}
+.franco{
+    @include flex(column,wrap,center,center,20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .francoImg{
+        width: 330px;
+    }
+    dt {
+        text-align: center;
+        color: rgb(23, 21, 23);
+    }
+    dd {
+        text-align: center;
+        color: rgb(118, 103, 115);
+    }
+}
+.eliana{
+    @include flex(column,wrap,center,center,20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .elianaImg{
+        width: 330px;
+    }
+    dt {
+        text-align: center;
+        color: rgb(23, 21, 23);
+    }
+    dd {
+        text-align: center;
+        color: rgb(118, 103, 115);
+    }
+}
+.video1{
+    width: 330px;
+    position: relative;
+    left: 20px;
+    padding-bottom: 20px;
+}
+.video2{
+    width: 330px;
+    position: relative;
+    left: 20px;
+    padding-bottom: 20px;
+}

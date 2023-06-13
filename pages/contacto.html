@@ -15,7 +15,7 @@
             <h1>Alan Teseo Bernier</h1>
             <span class="letra-1">AMBIENTACIONES</span>
         </div>
-        
+
         <nav>
             <ul class="navbar">
                 <li><a href="../index.html">INICIO</a></li>
@@ -27,48 +27,64 @@
         </nav>
     </header>
     <main>
-        <section class="informacion">
-            <div class="datoContacto1">
-                <img src="../assets/img/Iconos/ubicacion.png" alt="ubicacion">
-                <p>Buenos Aires</p>
+        <div class="mainFormulario">
+            <section class="informacion">
+                <div class="datoContacto1">
+                    <img src="../assets/img/Iconos/ubicacion.png" alt="ubicacion">
+                    <p>Buenos Aires</p>
+                </div>
+                <div class="datoContacto2">
+                    <img src="../assets/img/Iconos/llamada-telefonica.png" alt="número de celular de la empresa">
+                    <p>+5401145682416</p>
+                </div>
+                <div class="datoContacto3">
+                    <img src="../assets/img/Iconos/correo.png" alt="">
+                    <p>info@tbambientaciones.com.ar</p>
+                </div>
+            </section>
+            <div class="contenedorMapa">
+                <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5139868719825!2d-58.443269088992814!3d-34.56585897285513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c7f2d5430b%3A0xa76382eb749c1de9!2sFederico%20Lacroze%201938%2C%20C1426CPR%20CABA!5e0!3m2!1ses!2sar!4v1682932079711!5m2!1ses!2sar"
+                loading="lazy"
+                frameborder="0"></iframe>
             </div>
-            <div class="datoContacto2">
-                <img src="../assets/img/Iconos/llamada-telefonica.png" alt="número de celular de la empresa">
-                <p>+5401145682416</p>
-            </div>
-            <div class="datoContacto3">
-                <img src="../assets/img/Iconos/correo.png" alt="">
-                <p>info@tbambientaciones.com.ar</p>
-            </div>
-        </section>
-
-        <iframe class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.5139868719825!2d-58.443269088992814!3d-34.56585897285513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c7f2d5430b%3A0xa76382eb749c1de9!2sFederico%20Lacroze%201938%2C%20C1426CPR%20CABA!5e0!3m2!1ses!2sar!4v1682932079711!5m2!1ses!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
-            
-        <section class="seccionFormulario">
-            <h3>FORMULARIO DE CONTACTO</h3>
-            <h4>Complete el siguiente formulario con la información relacionada a su evento y nos pondremos en contacto
-                con usted.</h4>
-            <form class="formulario" action="">
-                    <label class="labelRegistro" for="fecha">Fecha: </label>
-                    <input class="inputRegistro" type="text" id="fecha" placeholder="dd/mm/aaaa" required>
-                    <label class="labelRegistro" for="lugar">Lugar (Salon): </label>
-                    <input class="inputRegistro" type="text" id="lugar" required>
-                    <label class="labelRegistro" for="número">Cantidad de personas: </label>
-                    <input class="inputRegistro" type="text" id="número" placeholder="Ingrese número" required>
-                    <label class="labelRegistro" for="evento">Tipo de evento: </label>
-                    <input class="inputRegistro" type="text" id="evento" placeholder="opcion">
-                    <label class="labelRegistro" for="celular">Número de contacto: </label>
-                    <input class="inputRegistro" type="text" id="celular" required>
-                    <label class="labelRegistro" for="email">Mail de contacto: </label>
-                    <input class="inputRegistro" type="text" id="email" required>
-                    <input class="inputMensaje" type="text" placeholder="Mensaje" required>
-                <button class="boton">ENVIAR</button>
-            </form>
-        </section>
-
+    
+            <section class="seccionFormulario">
+                <h3>FORMULARIO DE CONTACTO</h3>
+                <h4>Complete el siguiente formulario con la información relacionada a su evento y nos pondremos en contacto
+                    con usted.</h4>
+                <form class="formulario" action="">
+                    <div class="formFecha">
+                        <label class="labelRegistro" for="fecha">Fecha: </label>
+                        <input class="inputRegistro" type="text" id="fecha" placeholder="dd/mm/aaaa" required>
+                    </div>
+                    <div class="formLugar">
+                        <label class="labelRegistro" for="lugar">Lugar (Salon): </label>
+                        <input class="inputRegistro" type="text" id="lugar" required>
+                    </div>
+                    <div class="formPersonas">
+                        <label class="labelRegistro" for="número">Cantidad de personas: </label>
+                        <input class="inputRegistro" type="text" id="número" placeholder="Ingrese número" required>
+                    </div>
+                    <div class="formTipoEvento">
+                        <label class="labelRegistro" for="evento">Tipo de evento: </label>
+                        <input class="inputRegistro" type="text" id="evento" placeholder="opcion">
+                    </div>
+                    <div class="formContacto">
+                        <label class="labelRegistro" for="celular">Número de contacto: </label>
+                        <input class="inputRegistro" type="text" id="celular" required>
+                    </div>
+                    <div class="formMail">
+                        <label class="labelRegistro" for="email">Mail de contacto: </label>
+                        <input class="inputRegistro" type="text" id="email" required>
+                    </div>
+                    <div class="formMensaje">
+                        <input class="inputMensaje" type="text" placeholder="Mensaje" required>
+                    </div>
+                    <button class="boton">ENVIAR</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="elementosFoot">
